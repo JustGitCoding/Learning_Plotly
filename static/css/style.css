@@ -1,0 +1,14 @@
+body {
+    background-color: lightsteelblue;
+    font-family: 'Exo 2', sans-serif; color: black;
+}
+
+.jumbotron {
+    background-image: url("https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/26956/aImg/49424/ancient-permafrost-bacteria-can-be-resistant-to-modern-antibiotics-l.jpg");
+    background-size: 120% 150%;
+    opacity: 0.8;
+    text-align: center;
+    color: yellow;
+}
+
+.background-image {opacity: 0.5}

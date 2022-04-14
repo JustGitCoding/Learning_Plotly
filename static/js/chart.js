@@ -84,12 +84,14 @@ function buildCharts(sample) {
       text: resultLabels.slice(0,10).reverse(),
       type: 'bar',
       orientation: 'h',
-      marker: {color: "blue", opacity: 0.5}
+      marker: {color: "royalblue", opacity: 0.7}
     }];
 
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "<b>Top 10 Bacteria Cultures Found</b>"
+      title: "<b>Top 10 Bacteria Cultures Found</b>",
+      paper_bgcolor: "lavender",
+      plot_bgcolor: "lavender",
     };
     // // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
@@ -103,13 +105,16 @@ function buildCharts(sample) {
       marker: {
         size: resultValues,
         color: resultIDs,
-      } 
+      },
     }];
 
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
       title: "<b>Bacteria Cultures per Sample</b>",
-      xaxis: {title: "OTU ID"}
+      xaxis: {title: "OTU ID"},
+      paper_bgcolor: "lavender",
+      plot_bgcolor: "lavender",
+
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -137,18 +142,12 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      weidth: 600,
-      height: 450,
-      margin: {t: 0, b: 0}
+      margin: {t: 0, b: 0},
+      paper_bgcolor: "lavender",
+      plot_bgcolor: "lightsteelblue",
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
   });
 }
-
-
-// just making sure we can pull & see the data
-d3.json("samples.json").then(data => console.log(data));
-// print out key-value pairs for first object
-d3.json("samples.json").then(data => Object.entries(data.metadata[0]).forEach(([key,value]) => {console.log(key+": "+value);}));

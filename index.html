@@ -7,19 +7,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-xs-12 col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h2>Everything You Need to Know about Your Belly Button!</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-xs-12">
+      <h2>Welcome Test Subject!</h1>
+        <p>Please select your annonymized ID number from the dropdown menu below. 
+          As a precaution, please verify your Demographic Info to confirm that you have chosen
+          the correct ID number. Once you have correctly selected your ID number, you will see the
+          top 10 most commonly found backteria cultures from your belly button. The gauge to the
+          right is based on your inputs regarding the frequency in which you scrub your belly
+          button. The correlation between bacteria found vs washing frequency is yet to be 
+          determnied. Finally, the bubble chart at the bottom displays all bacteria cultures found
+          in your belly button, with the size of the bubble corresponding to the amount of 
+          cultures found. 
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
@@ -32,15 +51,18 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-xs-12 col-sm-12 col-md-5">
         <div id="bar"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-xs-12 col-sm-12 col-md-5">
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div id="space">&nbsp</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
         <div id="bubble"></div>
       </div>
     </div>
@@ -48,7 +70,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="chart.js"></script>
+  <script src="static/js/chart.js"></script>
 
 </body>
 
