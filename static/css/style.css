@@ -4,11 +4,17 @@ body {
 }
 
 .jumbotron {
-    background-image: url("https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/26956/aImg/49424/ancient-permafrost-bacteria-can-be-resistant-to-modern-antibiotics-l.jpg");
+    background-image: linear-gradient(rgb(248, 248, 248, 0.01), rgba(0,0,0, 0.01)), url("https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/26956/aImg/49424/ancient-permafrost-bacteria-can-be-resistant-to-modern-antibiotics-l.jpg");
     background-size: 120% 150%;
-    opacity: 0.8;
     text-align: center;
-    color: yellow;
+    color: azure;
 }
 
-.background-image {opacity: 0.5}
+.jumbotron h1 {
+    text-shadow: 3px 3px royalblue;
+}
+
+.jumbotron h2 {
+    text-shadow: 2px 2px royalblue;
+    -webkit-text-stroke: 1px white;
+}
